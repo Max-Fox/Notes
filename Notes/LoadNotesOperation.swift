@@ -46,7 +46,7 @@ class LoadNotesOperation: AsyncOperation {
         let notesDB = loadToDb.result
         let notesBackend = loadToBackend?.result
         
-        guard notesBackend != nil else {
+        guard notesBackend?.count != 0 else {
             notebook.loadFromNotes(notes: notesDB!)
             finish()
             return
@@ -55,7 +55,6 @@ class LoadNotesOperation: AsyncOperation {
         for (index, note) in (notesDB!.enumerated())  {
             if note.uid != notesBackend![index].uid {
                 //Если данныые не совпадают
-                //notesDB = notesBackend
                 notebook.loadFromNotes(notes: notesBackend!)
                 finish()
                 return

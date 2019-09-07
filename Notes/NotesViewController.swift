@@ -35,6 +35,7 @@ class NotesViewController: UIViewController {
         
         let operationLoad = LoadNotesOperation(notebook: fileNotebook, opQueue: backOperationQueue)
         operationQueue.addOperation(operationLoad)
+      //  operationQueue.waitUntilAllOperationsAreFinished()
        
     }
     

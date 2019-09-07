@@ -33,3 +33,20 @@ struct Note {
     }
     
 }
+
+struct TempNoteForJson: Codable {
+    let uid: String
+    let title: String
+    let content: String
+    let colorRed: Double
+    let colorGreen: Double
+    let colorBlue: Double
+    let colorAlpha: Int
+    let dateDate: Date?
+    
+    
+    func convertInNote() -> Note {
+        let note = Note(uid: self.uid, title: self.title, content: self.content, color: UIColor(red: CGFloat(self.colorRed), green: CGFloat(self.colorGreen), blue: CGFloat(self.colorBlue), alpha: CGFloat(self.colorAlpha)), priority: .usual, dateDead: self.dateDate)
+        return note
+    }
+}
