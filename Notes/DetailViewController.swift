@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CocoaLumberjack
+//import CocoaLumberjack
 
 protocol DetailViewControllerDelegate {
     func updateNote(note: Note, indexPath: Int)

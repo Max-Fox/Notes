@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import CocoaLumberjack
+//import CocoaLumberjack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    public let fileLogger: DDFileLogger = DDFileLogger()
+    //public let fileLogger: DDFileLogger = DDFileLogger()
 
     public var fileNotebook = FileNotebook()
     
@@ -26,13 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Настройка fileLogger
-        DDLog.add(DDOSLogger.sharedInstance) // Uses os_log
-        fileLogger.rollingFrequency = 60 * 60 * 24 // 24 hours
-        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
-        DDLog.add(fileLogger)
-        DDLogInfo("Приложение запущено")
+      //  DDLog.add(DDOSLogger.sharedInstance) // Uses os_log
+        //fileLogger.rollingFrequency = 60 * 60 * 24 // 24 hours
+        //fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+        //DDLog.add(fileLogger)
+        //DDLogInfo("Приложение запущено")
         
-        print("Путь до файла с логами: \(fileLogger.currentLogFileInfo.filePath)")
+       // print("Путь до файла с логами: \(fileLogger.currentLogFileInfo.filePath)")
         
         fileNotebook.loadFromFile()
         

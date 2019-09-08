@@ -49,20 +49,6 @@
 			remoteGlobalIDString = 3F997F6522C6C222004BEECC;
 			remoteInfo = Notes;
 		};
-		3FBE583823251AF6008D0500 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FBE583323251AF6008D0500 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C261436D14052AE3C35F240BCD155CAC;
-			remoteInfo = CocoaLumberjack;
-		};
-		3FBE583A23251AF6008D0500 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FBE583323251AF6008D0500 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6AB627FFEBEE9E089DCE3178735853CB;
-			remoteInfo = "Pods-Notes";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -101,7 +87,6 @@
 		3FB101F822DCB10B00A452E4 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		3FB101FA22DCCF9D00A452E4 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		3FB101FC22DCCFCF00A452E4 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		3FBE583323251AF6008D0500 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		3FD3244722D6934600EEB417 /* ChoseColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseColorViewController.swift; sourceTree = "<group>"; };
 		49F443F29AF90F46E2A3B5D1 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		5C45A5955B06DFEEA2F20F72 /* libPods-Notes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +124,6 @@
 		3F997F5D22C6C222004BEECC = {
 			isa = PBXGroup;
 			children = (
-				3FBE583323251AF6008D0500 /* Pods.xcodeproj */,
 				3F997F6822C6C222004BEECC /* Notes */,
 				3F4636E522CFF4D300D68772 /* NotesTests */,
 				3F997F6722C6C222004BEECC /* Products */,
@@ -225,15 +209,6 @@
 				3FACDB0822EF7279005D9A49 /* RemoveNoteDBOperation.swift */,
 			);
 			path = DBOperations;
-			sourceTree = "<group>";
-		};
-		3FBE583423251AF6008D0500 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3FBE583923251AF6008D0500 /* libCocoaLumberjack.a */,
-				3FBE583B23251AF6008D0500 /* libPods-Notes.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7EC7565EB4C265A0EFF02DC7 /* Pods */ = {
@@ -323,12 +298,6 @@
 			mainGroup = 3F997F5D22C6C222004BEECC;
 			productRefGroup = 3F997F6722C6C222004BEECC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3FBE583423251AF6008D0500 /* Products */;
-					ProjectRef = 3FBE583323251AF6008D0500 /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3F997F6522C6C222004BEECC /* Notes */,
@@ -336,23 +305,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3FBE583923251AF6008D0500 /* libCocoaLumberjack.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCocoaLumberjack.a;
-			remoteRef = 3FBE583823251AF6008D0500 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3FBE583B23251AF6008D0500 /* libPods-Notes.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-Notes.a";
-			remoteRef = 3FBE583A23251AF6008D0500 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F4636E222CFF4D200D68772 /* Resources */ = {
